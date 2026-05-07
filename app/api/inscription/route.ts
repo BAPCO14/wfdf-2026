@@ -4,9 +4,8 @@ import { checkRateLimit } from "@/lib/rate-limit";
 import DOMPurify from "isomorphic-dompurify";
 import { Resend } from "resend";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
 export async function POST(request: NextRequest) {
+  const resend = new Resend(process.env.RESEND_API_KEY);
   const { success } = await checkRateLimit(request);
   if (!success) return NextResponse.json({ error: "Too many requests" }, { status: 429 });
 

@@ -4,8 +4,6 @@ import { checkRateLimit } from "@/lib/rate-limit";
 import DOMPurify from "isomorphic-dompurify";
 import { Resend } from "resend";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
 async function verifyTurnstile(token: string): Promise<boolean> {
   const res = await fetch("https://challenges.cloudflare.com/turnstile/v0/siteverify", {
     method: "POST",
@@ -17,6 +15,7 @@ async function verifyTurnstile(token: string): Promise<boolean> {
 }
 
 export async function POST(request: NextRequest) {
+  const resend = new Resend(process.env.RESEND_API_KEY);
   const { success } = await checkRateLimit(request);
   if (!success) return NextResponse.json({ error: "Too many requests" }, { status: 429 });
 
