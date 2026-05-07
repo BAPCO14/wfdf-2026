@@ -35,17 +35,18 @@ export default function Header({ locale }: HeaderProps) {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
           {/* Logo */}
-          <Link href={`/${locale}`} className="flex-shrink-0" id="site-logo">
-            <div className={cn("transition-all duration-300", scrolled ? "h-10" : "h-12")}>
-              <div
-                className={cn(
-                  "font-[Oswald] uppercase font-bold tracking-widest transition-colors",
-                  scrolled ? "text-[#660066]" : "text-white",
-                  "text-xl"
-                )}
-              >
-                <span className="text-[#E40520]">WFDF</span> 2026
-              </div>
+          <Link href={`/${locale}`} className="flex-shrink-0 group" id="site-logo">
+            <div className="flex flex-col leading-none transition-all duration-300">
+              <span className="font-[Oswald] font-bold text-[#E40520] tracking-[0.25em] text-xs uppercase">Winamax</span>
+              <span className={cn(
+                "font-[Oswald] font-bold uppercase tracking-wider transition-colors",
+                scrolled ? "text-[#660066]" : "text-white",
+                "text-base md:text-lg leading-tight"
+              )}>French Darts Festival</span>
+              <span className={cn(
+                "font-[JetBrains_Mono,monospace] text-[9px] tracking-[0.3em] transition-colors",
+                scrolled ? "text-gray-400" : "text-white/50"
+              )}>2026 · CAEN</span>
             </div>
           </Link>
 

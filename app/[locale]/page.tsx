@@ -170,28 +170,126 @@ export default function HomePage({ params: { locale } }: { params: { locale: str
         </div>
       </section>
 
-      {/* Partners */}
-      <section className="py-16 bg-white">
+      {/* Winamax section */}
+      <section className="py-20 bg-gray-900 relative overflow-hidden">
+        <div className="absolute inset-0 opacity-10" style={{ background: "radial-gradient(ellipse at 50% 50%, #E40520 0%, transparent 70%)" }} aria-hidden />
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <RevealSection className="flex flex-col lg:flex-row items-center gap-12">
+            {/* Winamax logo */}
+            <div className="flex-shrink-0 flex flex-col items-center">
+              <div className="bg-[#E40520] px-10 py-5 mb-4">
+                <span className="font-[Oswald] text-white text-4xl font-bold tracking-[0.2em]">WINAMAX</span>
+              </div>
+              <span className="font-[Oswald] text-white/40 text-xs uppercase tracking-[0.4em]">{l === "fr" ? "Sponsor Titre" : "Title Sponsor"}</span>
+            </div>
+            <div className="flex-1 text-center lg:text-left">
+              <h2 className="font-[Oswald] text-3xl md:text-4xl uppercase text-white mb-4">
+                {l === "fr" ? "Partenaire fondateur du festival" : "Founding partner of the festival"}
+              </h2>
+              <p className="text-white/60 text-lg leading-relaxed font-medium mb-6">
+                {l === "fr"
+                  ? "Winamax, leader du poker et des paris sportifs en France, s'engage aux côtés du Winamax French Darts Festival pour faire des fléchettes un sport populaire en France. Un soutien majeur pour l'ensemble de la communauté darts."
+                  : "Winamax, France's leading poker and sports betting operator, is committed to the Winamax French Darts Festival to make darts a popular sport in France. Major support for the entire darts community."}
+              </p>
+              <a
+                href="https://www.winamax.fr"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-[#E40520] text-white font-[Oswald] uppercase tracking-widest text-sm px-8 py-3 hover:bg-[#c00418] transition-colors"
+              >
+                {l === "fr" ? "Découvrir Winamax" : "Discover Winamax"} →
+              </a>
+            </div>
+          </RevealSection>
+        </div>
+      </section>
+
+      {/* Partners by category */}
+      <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <RevealSection className="text-center mb-12">
-            <h2 className="font-[Oswald] text-2xl uppercase tracking-widest text-gray-400">
-              {l === "fr" ? "Ils nous font confiance" : "They trust us"}
+          <RevealSection className="text-center mb-16">
+            <h2 className="section-title">
+              {l === "fr" ? "Nos " : "Our "}<span className="accent">{l === "fr" ? "Partenaires" : "Partners"}</span>
             </h2>
           </RevealSection>
-          <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12">
-            {partnersData.map((p, i) => (
-              <RevealSection key={p.id} delay={i * 80}>
-                <a href={p.url} target="_blank" rel="noopener noreferrer" className="block opacity-40 hover:opacity-100 transition-opacity duration-300">
-                  <div
-                    className="font-[Oswald] text-xl uppercase tracking-widest font-bold"
-                    style={{ color: p.tier === "title" ? "#E40520" : "#333" }}
+
+          {/* Institutionnels */}
+          <RevealSection className="mb-14">
+            <div className="font-[Oswald] uppercase text-xs tracking-[0.4em] text-gray-400 mb-6 flex items-center gap-3">
+              <span className="flex-1 h-px bg-gray-100" />
+              {l === "fr" ? "Partenaires Institutionnels" : "Institutional Partners"}
+              <span className="flex-1 h-px bg-gray-100" />
+            </div>
+            <div className="flex flex-wrap items-center justify-center gap-6 md:gap-10">
+              {partnersData.filter((p) => p.tier === "institutional").map((p, i) => (
+                <RevealSection key={p.id} delay={i * 80}>
+                  <a href={p.url} target="_blank" rel="noopener noreferrer"
+                    className="group flex flex-col items-center gap-2 p-5 border border-gray-100 hover:border-gray-300 transition-colors w-40"
                   >
-                    {p.name}
-                  </div>
-                </a>
-              </RevealSection>
-            ))}
-          </div>
+                    <div
+                      className="w-12 h-12 rounded flex items-center justify-center font-[Oswald] text-lg font-bold text-white"
+                      style={{ background: p.color }}
+                    >
+                      {p.name.slice(0, 2).toUpperCase()}
+                    </div>
+                    <span className="font-[Oswald] text-xs uppercase tracking-wide text-center text-gray-600 group-hover:text-gray-900 transition-colors">{p.name}</span>
+                  </a>
+                </RevealSection>
+              ))}
+            </div>
+          </RevealSection>
+
+          {/* Équipementiers */}
+          <RevealSection className="mb-14">
+            <div className="font-[Oswald] uppercase text-xs tracking-[0.4em] text-gray-400 mb-6 flex items-center gap-3">
+              <span className="flex-1 h-px bg-gray-100" />
+              {l === "fr" ? "Équipementiers Officiels" : "Official Equipment Suppliers"}
+              <span className="flex-1 h-px bg-gray-100" />
+            </div>
+            <div className="flex flex-wrap items-center justify-center gap-6 md:gap-10">
+              {partnersData.filter((p) => p.tier === "equipment").map((p, i) => (
+                <RevealSection key={p.id} delay={i * 80}>
+                  <a href={p.url} target="_blank" rel="noopener noreferrer"
+                    className="group flex flex-col items-center gap-2 p-5 border border-gray-100 hover:border-[#660066] transition-colors w-40"
+                  >
+                    <div
+                      className="w-12 h-12 rounded flex items-center justify-center font-[Oswald] text-lg font-bold text-white"
+                      style={{ background: p.color }}
+                    >
+                      {p.name.slice(0, 2).toUpperCase()}
+                    </div>
+                    <span className="font-[Oswald] text-xs uppercase tracking-wide text-center text-gray-600 group-hover:text-[#660066] transition-colors">{p.name}</span>
+                  </a>
+                </RevealSection>
+              ))}
+            </div>
+          </RevealSection>
+
+          {/* Médias */}
+          <RevealSection>
+            <div className="font-[Oswald] uppercase text-xs tracking-[0.4em] text-gray-400 mb-6 flex items-center gap-3">
+              <span className="flex-1 h-px bg-gray-100" />
+              {l === "fr" ? "Partenaires Médias" : "Media Partners"}
+              <span className="flex-1 h-px bg-gray-100" />
+            </div>
+            <div className="flex flex-wrap items-center justify-center gap-6 md:gap-10">
+              {partnersData.filter((p) => p.tier === "media").map((p, i) => (
+                <RevealSection key={p.id} delay={i * 80}>
+                  <a href={p.url} target="_blank" rel="noopener noreferrer"
+                    className="group flex flex-col items-center gap-2 p-5 border border-gray-100 hover:border-gray-300 transition-colors w-40"
+                  >
+                    <div
+                      className="w-12 h-12 rounded flex items-center justify-center font-[Oswald] text-lg font-bold text-white"
+                      style={{ background: p.color }}
+                    >
+                      {p.name.slice(0, 2).toUpperCase()}
+                    </div>
+                    <span className="font-[Oswald] text-xs uppercase tracking-wide text-center text-gray-600 group-hover:text-gray-900 transition-colors">{p.name}</span>
+                  </a>
+                </RevealSection>
+              ))}
+            </div>
+          </RevealSection>
         </div>
       </section>
 

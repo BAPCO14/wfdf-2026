@@ -8,33 +8,30 @@ interface HeroSectionProps { locale: string; }
 export default function HeroSection({ locale }: HeroSectionProps) {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gray-900">
-      {/* Parallax background */}
-      <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage: "url('/assets/ambiance/hero-bg.webp')",
-          transform: "scale(1.1)",
-        }}
-      />
-      {/* Gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/50 to-[#660066]/80" />
+      {/* Gradient background — no image dependency */}
+      <div className="absolute inset-0" style={{
+        background: "radial-gradient(ellipse at 60% 40%, #2d003a 0%, #0d0d1a 50%, #1a0005 100%)"
+      }} />
+      {/* Animated violet glow */}
+      <div className="absolute inset-0" style={{
+        background: "radial-gradient(ellipse at 30% 70%, rgba(102,0,102,0.35) 0%, transparent 60%)"
+      }} />
+      {/* Winamax red glow */}
+      <div className="absolute inset-0" style={{
+        background: "radial-gradient(ellipse at 80% 20%, rgba(228,5,32,0.2) 0%, transparent 50%)"
+      }} />
 
-      {/* Animated dart pattern */}
-      <div className="absolute inset-0 opacity-5" aria-hidden>
-        {["🎯"].map((_, i) => (
-          <div
-            key={i}
-            className="absolute text-6xl"
-            style={{
-              top: `${20 + i * 30}%`,
-              left: `${10 + i * 40}%`,
-              animation: `pulse-slow ${3 + i}s ease-in-out infinite`,
-              animationDelay: `${i * 0.5}s`,
-            }}
-          >
-            🎯
-          </div>
-        ))}
+      {/* Dart board decorative SVG */}
+      <div className="absolute right-8 top-1/2 -translate-y-1/2 opacity-5 hidden lg:block" aria-hidden>
+        <svg width="400" height="400" viewBox="0 0 400 400">
+          {[180, 140, 100, 60, 30].map((r, i) => (
+            <circle key={r} cx="200" cy="200" r={r} fill="none" stroke="white" strokeWidth={i === 0 ? 2 : 1} />
+          ))}
+          {Array.from({ length: 20 }, (_, i) => {
+            const angle = (i * 18 * Math.PI) / 180;
+            return <line key={i} x1="200" y1="200" x2={200 + 180 * Math.cos(angle)} y2={200 + 180 * Math.sin(angle)} stroke="white" strokeWidth="0.5" />;
+          })}
+        </svg>
       </div>
 
       {/* Content */}
@@ -44,8 +41,16 @@ export default function HeroSection({ locale }: HeroSectionProps) {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
+          {/* Winamax logo badge */}
+          <div className="flex items-center justify-center gap-3 mb-6">
+            <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 px-5 py-2 rounded-none">
+              <WinamaxLogo className="h-5" />
+              <span className="text-white/50 text-xs">×</span>
+              <span className="font-[Oswald] text-white/80 uppercase tracking-widest text-xs">French Darts Festival</span>
+            </div>
+          </div>
           <span className="inline-block font-[Oswald] uppercase tracking-[0.4em] text-[#cc00cc] text-sm mb-4 border border-[#660066]/50 px-4 py-1">
-            {locale === "fr" ? "2ème édition" : "2nd edition"}
+            {locale === "fr" ? "2ème édition · Caen" : "2nd edition · Caen"}
           </span>
         </motion.div>
 
@@ -79,7 +84,6 @@ export default function HeroSection({ locale }: HeroSectionProps) {
           Caen — Parc des Expositions, Hall 3
         </motion.p>
 
-        {/* Countdown */}
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -89,7 +93,6 @@ export default function HeroSection({ locale }: HeroSectionProps) {
           <Countdown locale={locale} />
         </motion.div>
 
-        {/* CTAs */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -105,11 +108,19 @@ export default function HeroSection({ locale }: HeroSectionProps) {
         </motion.div>
       </div>
 
-      {/* Scroll indicator */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-white/40">
         <span className="text-xs uppercase tracking-widest">Scroll</span>
         <div className="w-px h-12 bg-white/20 animate-[pulse-slow_2s_ease-in-out_infinite]" />
       </div>
     </section>
+  );
+}
+
+function WinamaxLogo({ className }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 120 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect width="120" height="28" rx="2" fill="#E40520" />
+      <text x="60" y="20" textAnchor="middle" fontFamily="Arial, sans-serif" fontWeight="800" fontSize="14" fill="white" letterSpacing="1">WINAMAX</text>
+    </svg>
   );
 }

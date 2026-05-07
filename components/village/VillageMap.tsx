@@ -126,28 +126,18 @@ export default function VillageMap({ locale }: VillageMapProps) {
                 strokeWidth={active?.id === zone.id ? 3 : 1}
                 style={{ transition: "fill-opacity 0.2s ease" }}
               />
-              {/* Icon */}
-              <text
-                x={parseFloat(zone.path.split(" ")[1]) + (parseFloat(zone.path.split(" ")[7]) - parseFloat(zone.path.split(" ")[1])) / 2}
-                y={parseFloat(zone.path.split(" ")[2]) + (parseFloat(zone.path.split(" ")[10]) - parseFloat(zone.path.split(" ")[2])) / 2 - 8}
-                textAnchor="middle"
-                dominantBaseline="middle"
-                fontSize="20"
-              >
-                {zone.icon}
-              </text>
-              <text
-                x={parseFloat(zone.path.split(" ")[1]) + (parseFloat(zone.path.split(" ")[7]) - parseFloat(zone.path.split(" ")[1])) / 2}
-                y={parseFloat(zone.path.split(" ")[2]) + (parseFloat(zone.path.split(" ")[10]) - parseFloat(zone.path.split(" ")[2])) / 2 + 16}
-                textAnchor="middle"
-                dominantBaseline="middle"
-                fontSize="9"
-                fill="white"
-                fontFamily="Oswald, sans-serif"
-                fontWeight="bold"
-              >
-                {zone.label[l].toUpperCase()}
-              </text>
+              {/* Icon — centered using bbox from path coords */}
+              {(() => {
+                const parts = zone.path.split(" ");
+                const cx = parseFloat(parts[1]) + (parseFloat(parts[7]) - parseFloat(parts[1])) / 2;
+                const cy = parseFloat(parts[2]) + (parseFloat(parts[11]) - parseFloat(parts[2])) / 2;
+                return (
+                  <>
+                    <text x={cx} y={cy - 12} textAnchor="middle" dominantBaseline="middle" fontSize="22">{zone.icon}</text>
+                    <text x={cx} y={cy + 14} textAnchor="middle" dominantBaseline="middle" fontSize="9" fill="white" fontFamily="Oswald, sans-serif" fontWeight="bold">{zone.label[l].toUpperCase()}</text>
+                  </>
+                );
+              })()}
             </g>
           ))}
         </svg>
