@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "question": { "fr": "Comment s'inscrire à un tournoi ?", "en": "How do I register for a tournament?" },
+    "answer": { "fr": "Rendez-vous sur la page Tournois, sélectionnez votre tournoi et remplissez le formulaire d'inscription. Vous recevrez une confirmation par email sous 48h.", "en": "Go to the Tournaments page, select your tournament and fill in the registration form. You will receive a confirmation by email within 48 hours." },
+    "category": "tournaments"
+  },
+  {
+    "id": 2,
+    "question": { "fr": "Faut-il une licence pour participer ?", "en": "Do I need a license to participate?" },
+    "answer": { "fr": "La plupart des tournois sont ouverts sans licence. Seul le Grand Prix de Normandie requiert une licence fédérale en cours de validité.", "en": "Most tournaments are open without a license. Only the Grand Prix de Normandie requires a valid federal license." },
+    "category": "tournaments"
+  },
+  {
+    "id": 3,
+    "question": { "fr": "Où se déroule le festival ?", "en": "Where does the festival take place?" },
+    "answer": { "fr": "Au Parc des Expositions de Caen, Hall 3, Rue Joseph Philippon, 14000 Caen. Parking gratuit sur place.", "en": "At the Caen Exhibition Park, Hall 3, Rue Joseph Philippon, 14000 Caen. Free parking on site." },
+    "category": "practical"
+  },
+  {
+    "id": 4,
+    "question": { "fr": "Quels sont les horaires d'ouverture ?", "en": "What are the opening hours?" },
+    "answer": { "fr": "Vendredi 4 décembre : 8h-23h. Samedi 5 décembre : 8h-24h. Dimanche 6 décembre : 9h-18h.", "en": "Friday December 4: 8am-11pm. Saturday December 5: 8am-midnight. Sunday December 6: 9am-6pm." },
+    "category": "practical"
+  },
+  {
+    "id": 5,
+    "question": { "fr": "Le festival est-il accessible aux familles ?", "en": "Is the festival family-friendly?" },
+    "answer": { "fr": "Absolument ! Le Village propose des animations pour tous les âges. Le tournoi Fun & Amateur est ouvert aux jeunes dès 12 ans accompagnés d'un adulte.", "en": "Absolutely! The Village has activities for all ages. The Fun & Amateur tournament is open to young people from age 12 accompanied by an adult." },
+    "category": "practical"
+  },
+  {
+    "id": 6,
+    "question": { "fr": "Comment accéder au programme Work'N'Play ?", "en": "How do I access the Work'N'Play program?" },
+    "answer": { "fr": "Le programme Work'N'Play est réservé aux entreprises. Remplissez le formulaire dédié sur notre site — notre équipe vous contactera pour personnaliser votre expérience.", "en": "The Work'N'Play program is reserved for businesses. Fill in the dedicated form on our website — our team will contact you to personalize your experience." },
+    "category": "corporate"
+  },
+  {
+    "id": 7,
+    "question": { "fr": "Des places sont-elles disponibles pour la Soirée de Gala ?", "en": "Are tickets available for the Gala Evening?" },
+    "answer": { "fr": "La Soirée de Gala du samedi soir est sur invitation. Des places limitées sont disponibles à l'achat sur la page dédiée.", "en": "The Saturday evening Gala is by invitation. Limited tickets are available for purchase on the dedicated page." },
+    "category": "gala"
+  },
+  {
+    "id": 8,
+    "question": { "fr": "Comment devenir partenaire ?", "en": "How do I become a partner?" },
+    "answer": { "fr": "Contactez-nous via le formulaire partenaires ou écrivez directement à contact@frenchdartsfestival.fr. Plusieurs formules de partenariat sont disponibles.", "en": "Contact us via the partners form or write directly to contact@frenchdartsfestival.fr. Several partnership packages are available." },
+    "category": "corporate"
+  }
+]

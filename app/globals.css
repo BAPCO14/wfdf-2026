@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Manrope:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap');
+
+:root {
+  --color-violet: #660066;
+  --color-violet-light: #cc00cc;
+  --color-winamax: #E40520;
+}
+
+@layer base {
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    @apply bg-white text-gray-900;
+    font-family: "Manrope", sans-serif;
+    cursor: none;
+    overflow-x: hidden;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Oswald", sans-serif;
+    @apply uppercase tracking-wide;
+  }
+  .font-mono-tech { font-family: "JetBrains Mono", monospace; }
+}
+
+@layer components {
+  .btn-primary {
+    @apply relative overflow-hidden inline-flex items-center justify-center gap-2;
+    @apply bg-[#660066] text-white px-8 py-3;
+    @apply font-[Oswald] uppercase tracking-widest text-sm;
+    @apply transition-all duration-300;
+    @apply hover:shadow-[0_0_25px_rgba(102,0,102,0.5)] hover:bg-[#7a007a];
+  }
+  .btn-primary .ripple {
+    @apply absolute rounded-full bg-white/20 pointer-events-none;
+    animation: ripple 0.6s linear;
+  }
+
+  .btn-outline {
+    @apply relative overflow-hidden inline-flex items-center justify-center gap-2;
+    @apply border-2 border-[#660066] text-[#660066] px-8 py-3;
+    @apply font-[Oswald] uppercase tracking-widest text-sm;
+    @apply transition-all duration-300;
+    @apply hover:bg-[#660066] hover:text-white;
+  }
+
+  .section-title {
+    font-family: "Oswald", sans-serif;
+    @apply text-4xl md:text-5xl lg:text-6xl uppercase tracking-wider text-gray-900;
+  }
+  .section-title .accent { @apply text-[#660066]; }
+
+  .reveal {
+    @apply opacity-0 translate-y-8;
+    transition: opacity 0.7s ease, transform 0.7s ease;
+  }
+  .reveal.visible { @apply opacity-100 translate-y-0; }
+}
+
+/* Custom cursor */
+#cursor-dot {
+  width: 8px; height: 8px;
+  background: #660066;
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  transition: width 0.2s ease, height 0.2s ease, background 0.2s ease;
+}
+#cursor-dot.hovering {
+  width: 32px; height: 32px;
+  background: transparent;
+  border: 2px solid #660066;
+}
+
+/* Scroll progress */
+#scroll-progress {
+  position: fixed; top: 0; left: 0;
+  height: 3px; width: 0%;
+  background: linear-gradient(90deg, #660066, #cc00cc);
+  z-index: 1000;
+  transition: width 0.1s linear;
+}
+
+/* Dart easter egg */
+#dart-easter {
+  position: fixed;
+  font-size: 3rem;
+  pointer-events: none;
+  z-index: 9998;
+  top: 50%; left: -100px;
+  transform: translateY(-50%) rotate(-20deg);
+  opacity: 0;
+}
+#dart-easter.active {
+  animation: dartFly 1s cubic-bezier(0.25,0.46,0.45,0.94) forwards;
+}
+
+@keyframes ripple {
+  0% { transform: translate(-50%,-50%) scale(0); opacity: 0.6; }
+  100% { transform: translate(-50%,-50%) scale(4); opacity: 0; }
+}
+
+@keyframes dartFly {
+  0% { left: -100px; opacity: 0; transform: translateY(-50%) rotate(-20deg); }
+  20% { opacity: 1; }
+  80% { opacity: 1; }
+  100% { left: calc(50% - 24px); opacity: 1; transform: translateY(-50%) rotate(0deg); }
+}
+
+@keyframes pulse-slow {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}

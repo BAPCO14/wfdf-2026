@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-oswald: "Oswald", sans-serif;
+  --font-manrope: "Manrope", sans-serif;
+  --font-jetbrains: "JetBrains Mono", monospace;
+  --color-violet: #660066;
+  --color-winamax: #E40520;
+}
+
+@layer base {
+  * { @apply border-border; }
+  body {
+    @apply bg-white text-gray-900 font-body;
+    cursor: none;
+  }
+  h1, h2, h3, h4, h5, h6 { @apply font-title uppercase tracking-wide; }
+}
+
+@layer components {
+  .btn-primary {
+    @apply relative overflow-hidden bg-violet-500 text-white font-title uppercase tracking-widest px-8 py-3 transition-all duration-300;
+  }
+  .btn-primary:hover { @apply shadow-[0_0_20px_rgba(102,0,102,0.5)]; }
+  .btn-primary::after {
+    content: "";
+    @apply absolute inset-0 bg-violet-400 scale-0 rounded-full opacity-0;
+    animation: none;
+  }
+  .btn-primary:active::after { @apply animate-ripple; }
+
+  .section-title {
+    @apply font-title text-4xl md:text-5xl lg:text-6xl uppercase tracking-wider text-gray-900;
+  }
+  .section-title span { @apply text-violet-500; }
+
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-xl hover:-translate-y-1;
+  }
+
+  .reveal { @apply opacity-0 translate-y-8 transition-all duration-700 ease-out; }
+  .reveal.visible { @apply opacity-100 translate-y-0; }
+}
+
+/* Custom cursor */
+.cursor-dot {
+  width: 8px; height: 8px;
+  background: #660066;
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  transition: transform 0.15s ease, width 0.2s ease, height 0.2s ease;
+}
+.cursor-dot.hovering {
+  width: 24px; height: 24px;
+  background: rgba(102, 0, 102, 0.3);
+  border: 2px solid #660066;
+}
+
+/* Progress bar */
+.scroll-progress {
+  position: fixed;
+  top: 0; left: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #660066, #cc00cc);
+  z-index: 1000;
+  transform-origin: left;
+}
+
+/* Dart easter egg */
+.dart-easter {
+  position: fixed;
+  font-size: 2rem;
+  pointer-events: none;
+  z-index: 9998;
+  opacity: 0;
+}
+.dart-easter.active { @apply animate-dart-fly; }

@@ -1,0 +1,65 @@
+{
+  "nav": {
+    "home": "Home",
+    "tournaments": "Tournaments",
+    "gala": "Gala Evening",
+    "village": "The Village",
+    "schedule": "Schedule",
+    "info": "Practical info",
+    "worknplay": "Work'N'Play",
+    "contact": "Contact",
+    "register": "Register",
+    "tickets": "Tickets"
+  },
+  "hero": {
+    "edition": "2nd edition",
+    "title": "Winamax French Darts Festival",
+    "date": "4, 5 & 6 December 2026",
+    "location": "Caen — Exhibition Park, Hall 3",
+    "cta_register": "Register for a tournament",
+    "cta_discover": "Discover the festival",
+    "countdown_days": "Days",
+    "countdown_hours": "Hours",
+    "countdown_minutes": "Minutes",
+    "countdown_seconds": "Seconds"
+  },
+  "home": {
+    "pros_title": "Pros in Caen",
+    "pros_subtitle": "3 world champions competing",
+    "tournaments_title": "8 tournaments",
+    "tournaments_subtitle": "All levels, all categories",
+    "village_title": "The Village",
+    "village_subtitle": "Activities, food, discovery area",
+    "gala_title": "Gala Evening",
+    "gala_subtitle": "Saturday 5 December — dinner, show, prize ceremony",
+    "partners_title": "They trust us",
+    "newsletter_title": "Stay informed",
+    "newsletter_subtitle": "All festival news in your inbox",
+    "newsletter_placeholder": "your@email.com",
+    "newsletter_cta": "Subscribe",
+    "newsletter_consent": "I agree to receive the festival newsletter (double opt-in required)"
+  },
+  "footer": {
+    "tagline": "France's leading darts festival",
+    "legal": "Legal notices",
+    "privacy": "Privacy policy",
+    "cookies": "Cookies",
+    "organizer": "Organized by French Darts SAS",
+    "rights": "All rights reserved"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "success": "Sent successfully",
+    "required": "Required field",
+    "send": "Send",
+    "back": "Back",
+    "seeAll": "See all",
+    "learnMore": "Learn more",
+    "register": "Register",
+    "prizePool": "Prize pool",
+    "players": "max players",
+    "day": "Day",
+    "hall": "Hall"
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "tournaments": "Tournois",
+    "gala": "Soirée Gala",
+    "village": "Le Village",
+    "schedule": "Programme",
+    "info": "Infos pratiques",
+    "worknplay": "Work'N'Play",
+    "contact": "Contact",
+    "register": "S'inscrire",
+    "tickets": "Billets"
+  },
+  "hero": {
+    "edition": "2ème édition",
+    "title": "Winamax French Darts Festival",
+    "date": "4, 5 & 6 décembre 2026",
+    "location": "Caen — Parc des Expositions, Hall 3",
+    "cta_register": "S'inscrire à un tournoi",
+    "cta_discover": "Découvrir le festival",
+    "countdown_days": "Jours",
+    "countdown_hours": "Heures",
+    "countdown_minutes": "Minutes",
+    "countdown_seconds": "Secondes"
+  },
+  "home": {
+    "pros_title": "Les pros à Caen",
+    "pros_subtitle": "3 champions mondiaux en lice",
+    "tournaments_title": "8 tournois",
+    "tournaments_subtitle": "Tous niveaux, toutes catégories",
+    "village_title": "Le Village",
+    "village_subtitle": "Animations, restauration, espace découverte",
+    "gala_title": "Soirée de Gala",
+    "gala_subtitle": "Samedi 5 décembre — dîner, show, remises de prix",
+    "partners_title": "Ils nous font confiance",
+    "newsletter_title": "Restez informés",
+    "newsletter_subtitle": "Toute l'actualité du festival dans votre boîte",
+    "newsletter_placeholder": "votre@email.fr",
+    "newsletter_cta": "Je m'inscris",
+    "newsletter_consent": "J'accepte de recevoir la newsletter du festival (double opt-in requis)"
+  },
+  "footer": {
+    "tagline": "Le festival de fléchettes de référence en France",
+    "legal": "Mentions légales",
+    "privacy": "Politique de confidentialité",
+    "cookies": "Cookies",
+    "organizer": "Organisé par French Darts SAS",
+    "rights": "Tous droits réservés"
+  },
+  "common": {
+    "loading": "Chargement...",
+    "error": "Une erreur est survenue",
+    "success": "Envoyé avec succès",
+    "required": "Champ obligatoire",
+    "send": "Envoyer",
+    "back": "Retour",
+    "seeAll": "Voir tout",
+    "learnMore": "En savoir plus",
+    "register": "S'inscrire",
+    "prizePool": "Prize pool",
+    "players": "joueurs max",
+    "day": "Jour",
+    "hall": "Salle"
+  }
+}

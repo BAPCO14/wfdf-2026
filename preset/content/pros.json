@@ -1,0 +1,56 @@
+[
+  {
+    "id": "luke-littler",
+    "slug": "luke-littler",
+    "name": "Luke Littler",
+    "nickname": "The Nuke",
+    "nationality": "Anglais",
+    "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+    "ranking": 1,
+    "average": 102.4,
+    "bio": {
+      "fr": "Prodige anglais, champion du monde PDC 2024 à seulement 17 ans. Luke Littler est la nouvelle star mondiale des fléchettes.",
+      "en": "English prodigy, PDC World Champion 2024 at just 17 years old. Luke Littler is the new world superstar of darts."
+    },
+    "achievements": ["Champion du Monde PDC 2024", "Premier League Darts 2024", "Players Championship Finals 2023"],
+    "photo": "/assets/players/luke-littler.webp",
+    "instagram": "lukelittler180",
+    "tournament": "Winamax Open"
+  },
+  {
+    "id": "michael-van-gerwen",
+    "slug": "michael-van-gerwen",
+    "name": "Michael van Gerwen",
+    "nickname": "MvG",
+    "nationality": "Néerlandais",
+    "flag": "🇳🇱",
+    "ranking": 3,
+    "average": 99.8,
+    "bio": {
+      "fr": "La légende vivante des fléchettes. Trois fois champion du monde, Michael van Gerwen reste l'un des joueurs les plus redoutés.",
+      "en": "The living legend of darts. Three-time world champion, Michael van Gerwen remains one of the most feared players."
+    },
+    "achievements": ["Champion du Monde PDC 2014, 2017, 2019", "16 fois major PDC", "Record 180s en un match"],
+    "photo": "/assets/players/michael-van-gerwen.webp",
+    "instagram": "michaelvangerwendarts",
+    "tournament": "Grand Prix de Normandie"
+  },
+  {
+    "id": "gerwyn-price",
+    "slug": "gerwyn-price",
+    "name": "Gerwyn Price",
+    "nickname": "The Iceman",
+    "nationality": "Gallois",
+    "flag": "🏴󠁧󠁢󠁷󠁬󠁳󠁿",
+    "ranking": 6,
+    "average": 96.2,
+    "bio": {
+      "fr": "Ancien rugbyman reconverti en champion de fléchettes. Gerwyn Price est connu pour son mental d'acier et sa précision redoutable.",
+      "en": "Former rugby player turned darts champion. Gerwyn Price is known for his nerves of steel and deadly accuracy."
+    },
+    "achievements": ["Champion du Monde PDC 2021", "Premier League Darts 2022", "World Grand Prix 2020"],
+    "photo": "/assets/players/gerwyn-price.webp",
+    "instagram": "gerwynpricedarts",
+    "tournament": "Coupe de Caen"
+  }
+]

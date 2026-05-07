@@ -1,0 +1,74 @@
+[
+  {
+    "id": "winamax",
+    "name": "Winamax",
+    "tier": "title",
+    "logo": "/assets/partners/winamax.png",
+    "url": "https://www.winamax.fr",
+    "color": "#E40520",
+    "description": { "fr": "Sponsor titre — partenaire fondateur du festival", "en": "Title sponsor — founding partner of the festival" }
+  },
+  {
+    "id": "ville-caen",
+    "name": "Ville de Caen",
+    "tier": "institutional",
+    "logo": "/assets/partners/ville-caen.png",
+    "url": "https://www.caen.fr",
+    "color": "#003399",
+    "description": { "fr": "Partenaire institutionnel", "en": "Institutional partner" }
+  },
+  {
+    "id": "normandie-tourisme",
+    "name": "Normandie Tourisme",
+    "tier": "institutional",
+    "logo": "/assets/partners/normandie-tourisme.png",
+    "url": "https://www.normandie-tourisme.fr",
+    "color": "#00843D",
+    "description": { "fr": "Partenaire institutionnel", "en": "Institutional partner" }
+  },
+  {
+    "id": "btv",
+    "name": "BTV Bretagne",
+    "tier": "media",
+    "logo": "/assets/partners/btv.png",
+    "url": "#",
+    "color": "#FF6600",
+    "description": { "fr": "Partenaire média officiel", "en": "Official media partner" }
+  },
+  {
+    "id": "target-darts",
+    "name": "Target Darts",
+    "tier": "equipment",
+    "logo": "/assets/partners/target-darts.png",
+    "url": "https://www.target-darts.co.uk",
+    "color": "#CC0000",
+    "description": { "fr": "Équipementier officiel", "en": "Official equipment supplier" }
+  },
+  {
+    "id": "red-dragon",
+    "name": "Red Dragon Darts",
+    "tier": "equipment",
+    "logo": "/assets/partners/red-dragon.png",
+    "url": "https://www.reddragon.co.uk",
+    "color": "#C41230",
+    "description": { "fr": "Équipementier officiel", "en": "Official equipment supplier" }
+  },
+  {
+    "id": "unicorn",
+    "name": "Unicorn Darts",
+    "tier": "equipment",
+    "logo": "/assets/partners/unicorn.png",
+    "url": "https://www.unicorn-darts.com",
+    "color": "#1A1A2E",
+    "description": { "fr": "Équipementier officiel", "en": "Official equipment supplier" }
+  },
+  {
+    "id": "calvados-departement",
+    "name": "Département du Calvados",
+    "tier": "institutional",
+    "logo": "/assets/partners/calvados.png",
+    "url": "https://www.calvados.fr",
+    "color": "#005B8E",
+    "description": { "fr": "Partenaire institutionnel", "en": "Institutional partner" }
+  }
+]

@@ -1,0 +1,170 @@
+[
+  {
+    "id": "winamax-open",
+    "slug": "winamax-open",
+    "name": "Winamax Open",
+    "subtitle": { "fr": "Le tournoi phare", "en": "The flagship tournament" },
+    "format": "501 Double Out",
+    "prizePool": 10000,
+    "maxPlayers": 128,
+    "day": "Vendredi 4 décembre 2026",
+    "time": "09:00",
+    "hall": "Hall 3 — Zone A",
+    "level": "open",
+    "pro": "luke-littler",
+    "description": {
+      "fr": "Le tournoi principal ouvert à tous. Affrontez des joueurs de tout niveau dans un format élimination directe. Qualifiez-vous pour la grande finale du samedi soir.",
+      "en": "The main open tournament. Play against players of all levels in a straight elimination format. Qualify for the grand final Saturday evening."
+    },
+    "rules": ["501 Double Out", "Best of 5 legs jusqu'en quart", "Best of 7 en demi et finale"],
+    "registration": true,
+    "registrationDeadline": "2026-11-20"
+  },
+  {
+    "id": "grand-prix-normandie",
+    "slug": "grand-prix-normandie",
+    "name": "Grand Prix de Normandie",
+    "subtitle": { "fr": "Le prestige local", "en": "Local prestige" },
+    "format": "501 Double Out",
+    "prizePool": 5000,
+    "maxPlayers": 64,
+    "day": "Vendredi 4 décembre 2026",
+    "time": "14:00",
+    "hall": "Hall 3 — Zone B",
+    "level": "regional",
+    "pro": "michael-van-gerwen",
+    "description": {
+      "fr": "Réservé aux joueurs licenciés en Normandie et régions limitrophes. Le tournoi qui fait les champions locaux.",
+      "en": "Reserved for licensed players in Normandy and neighboring regions. The tournament that makes local champions."
+    },
+    "rules": ["501 Double Out", "Best of 5 legs"],
+    "registration": true,
+    "registrationDeadline": "2026-11-15"
+  },
+  {
+    "id": "coupe-caen",
+    "slug": "coupe-caen",
+    "name": "Coupe de Caen",
+    "subtitle": { "fr": "La tradition caennaise", "en": "Caen tradition" },
+    "format": "301 Double Out",
+    "prizePool": 2000,
+    "maxPlayers": 64,
+    "day": "Samedi 5 décembre 2026",
+    "time": "09:00",
+    "hall": "Hall 3 — Zone C",
+    "level": "city",
+    "pro": "gerwyn-price",
+    "description": {
+      "fr": "Le tournoi historique de la ville de Caen, devenu incontournable depuis la première édition du festival.",
+      "en": "Caen's historic tournament, which has become unmissable since the festival's first edition."
+    },
+    "rules": ["301 Double Out", "Best of 3 legs"],
+    "registration": true,
+    "registrationDeadline": "2026-11-25"
+  },
+  {
+    "id": "ladies-cup",
+    "slug": "ladies-cup",
+    "name": "Ladies Cup",
+    "subtitle": { "fr": "Le tournoi féminin", "en": "Women's tournament" },
+    "format": "501 Double Out",
+    "prizePool": 3000,
+    "maxPlayers": 32,
+    "day": "Samedi 5 décembre 2026",
+    "time": "10:00",
+    "hall": "Hall 3 — Zone D",
+    "level": "ladies",
+    "pro": null,
+    "description": {
+      "fr": "Tournoi exclusivement féminin, vitrine du talent des joueuses de fléchettes françaises et européennes.",
+      "en": "Exclusively women's tournament, showcasing the talent of French and European female darts players."
+    },
+    "rules": ["501 Double Out", "Best of 5 legs"],
+    "registration": true,
+    "registrationDeadline": "2026-11-25"
+  },
+  {
+    "id": "youth-championship",
+    "slug": "youth-championship",
+    "name": "Youth Championship",
+    "subtitle": { "fr": "Les champions de demain", "en": "Champions of tomorrow" },
+    "format": "501 Double Out",
+    "prizePool": 1500,
+    "maxPlayers": 32,
+    "day": "Samedi 5 décembre 2026",
+    "time": "09:00",
+    "hall": "Hall 3 — Zone E",
+    "level": "youth",
+    "pro": null,
+    "description": {
+      "fr": "Ouvert aux joueurs de moins de 21 ans. Le tremplin vers une carrière professionnelle.",
+      "en": "Open to players under 21. The springboard to a professional career."
+    },
+    "rules": ["501 Double Out", "Best of 3 legs jusqu'en demi", "Best of 5 en finale"],
+    "registration": true,
+    "registrationDeadline": "2026-11-25"
+  },
+  {
+    "id": "doubles-challenge",
+    "slug": "doubles-challenge",
+    "name": "Doubles Challenge",
+    "subtitle": { "fr": "L'esprit d'équipe", "en": "Team spirit" },
+    "format": "501 Double Out — Pairs",
+    "prizePool": 4000,
+    "maxPlayers": 32,
+    "day": "Dimanche 6 décembre 2026",
+    "time": "10:00",
+    "hall": "Hall 3 — Zone A+B",
+    "level": "pairs",
+    "pro": null,
+    "description": {
+      "fr": "Tournoi en paires mixtes ou non. Formez votre équipe et affrontez les meilleures duos du circuit.",
+      "en": "Mixed or same pairs tournament. Form your team and face the best duos on the circuit."
+    },
+    "rules": ["501 Double Out", "Best of 5 legs", "Alternance obligatoire des lancers"],
+    "registration": true,
+    "registrationDeadline": "2026-11-28"
+  },
+  {
+    "id": "masters-invitational",
+    "slug": "masters-invitational",
+    "name": "Masters Invitational",
+    "subtitle": { "fr": "Invitation seulement", "en": "By invitation only" },
+    "format": "501 Double Out",
+    "prizePool": 8000,
+    "maxPlayers": 16,
+    "day": "Dimanche 6 décembre 2026",
+    "time": "14:00",
+    "hall": "Hall 3 — Scène principale",
+    "level": "invitational",
+    "pro": "luke-littler",
+    "description": {
+      "fr": "Les 16 meilleurs joueurs du weekend s'affrontent dans ce tournoi final sur la scène principale. Le couronnement du festival.",
+      "en": "The 16 best players of the weekend compete in this final tournament on the main stage. The crowning event of the festival."
+    },
+    "rules": ["501 Double Out", "Best of 7 legs", "Finale Best of 11"],
+    "registration": false,
+    "registrationDeadline": null
+  },
+  {
+    "id": "fun-amateur",
+    "slug": "fun-amateur",
+    "name": "Fun & Amateur",
+    "subtitle": { "fr": "Pour tous les niveaux", "en": "For all levels" },
+    "format": "301 Single Out",
+    "prizePool": 500,
+    "maxPlayers": 256,
+    "day": "Vendredi, Samedi & Dimanche",
+    "time": "En continu",
+    "hall": "Hall 3 — Zone Village",
+    "level": "fun",
+    "pro": null,
+    "description": {
+      "fr": "Inscrivez-vous sur place, jouez quand vous voulez. Format découverte idéal pour les néophytes et les familles.",
+      "en": "Register on-site, play whenever you want. Ideal discovery format for beginners and families."
+    },
+    "rules": ["301 Single Out", "Best of 3 legs", "Pas de licence requise"],
+    "registration": true,
+    "registrationDeadline": null
+  }
+]
