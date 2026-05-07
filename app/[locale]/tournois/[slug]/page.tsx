@@ -8,7 +8,10 @@ import prosData from "@/content/pros.json";
 import type { Metadata } from "next";
 
 export async function generateStaticParams() {
-  return tournamentsData.map((t) => ({ slug: t.slug }));
+  const locales = ["fr", "en"];
+  return locales.flatMap((locale) =>
+    tournamentsData.map((t) => ({ locale, slug: t.slug }))
+  );
 }
 
 export async function generateMetadata({ params }: { params: { slug: string; locale: string } }): Promise<Metadata> {
