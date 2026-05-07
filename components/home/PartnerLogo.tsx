@@ -10,13 +10,13 @@ interface PartnerLogoProps {
 export default function PartnerLogo({ src, alt, color }: PartnerLogoProps) {
   const [failed, setFailed] = useState(false);
 
-  if (failed) {
+  if (failed || !src) {
     return (
       <div
-        className="w-full h-14 rounded flex items-center justify-center font-[Oswald] text-lg font-bold text-white"
+        className="w-full h-16 rounded flex items-center justify-center font-[Oswald] text-base font-bold text-white px-2 text-center"
         style={{ background: color }}
       >
-        {alt.slice(0, 2).toUpperCase()}
+        {alt}
       </div>
     );
   }
@@ -26,9 +26,9 @@ export default function PartnerLogo({ src, alt, color }: PartnerLogoProps) {
     <img
       src={src}
       alt={alt}
-      width={160}
-      height={56}
-      className="w-full h-14 object-contain group-hover:scale-105 transition-transform duration-200"
+      width={180}
+      height={64}
+      className="w-full h-16 object-contain group-hover:scale-105 transition-transform duration-200"
       onError={() => setFailed(true)}
     />
   );

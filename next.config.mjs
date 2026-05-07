@@ -21,7 +21,7 @@ const securityHeaders = [
       "img-src 'self' data: blob: https:",
       "media-src 'self'",
       "connect-src 'self' https://api.resend.com https://api.brevo.com https://*.upstash.io",
-      "frame-src https://challenges.cloudflare.com",
+      "frame-src https://challenges.cloudflare.com https://www.youtube.com https://www.youtube-nocookie.com",
       "object-src 'none'",
       "base-uri 'self'",
       "form-action 'self'",

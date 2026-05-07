@@ -2,6 +2,7 @@ import HeroSection from "@/components/home/HeroSection";
 import RevealSection from "@/components/home/RevealSection";
 import ProCard from "@/components/home/ProCard";
 import PartnerLogo from "@/components/home/PartnerLogo";
+import VideoSection from "@/components/home/VideoSection";
 import NewsletterForm from "@/components/home/NewsletterForm";
 import Link from "next/link";
 import { formatCurrency } from "@/lib/utils";
@@ -112,6 +113,9 @@ export default function HomePage({ params: { locale } }: { params: { locale: str
           </RevealSection>
         </div>
       </section>
+
+      {/* Video section */}
+      <VideoSection locale={locale} />
 
       {/* Village teaser */}
       <section className="py-24 bg-white">
@@ -232,10 +236,12 @@ export default function HomePage({ params: { locale } }: { params: { locale: str
                       href={p.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className={`group flex flex-col items-center gap-3 p-4 border border-gray-100 ${hover} transition-all duration-200 w-44 hover:shadow-md`}
+                      className={`group flex flex-col items-center gap-3 p-5 border-2 border-gray-100 ${hover} transition-all duration-200 w-52 hover:shadow-lg bg-white`}
                     >
-                      <PartnerLogo src={p.logo} alt={p.name} color={p.color} />
-                      <span className="font-[Oswald] text-xs uppercase tracking-wide text-center text-gray-500 group-hover:text-gray-900 transition-colors">{p.name}</span>
+                      <div className="w-full h-16 flex items-center justify-center">
+                        <PartnerLogo src={p.logo} alt={p.name} color={p.color} />
+                      </div>
+                      <span className="font-[Oswald] text-xs uppercase tracking-wide text-center text-gray-600 group-hover:text-[#660066] transition-colors font-bold">{p.name}</span>
                     </a>
                   </RevealSection>
                 ))}

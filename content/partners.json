@@ -3,7 +3,7 @@
     "id": "winamax",
     "name": "Winamax",
     "tier": "title",
-    "logo": "/assets/partners/winamax.svg",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/0/07/Winamax_Logo.svg",
     "url": "https://www.winamax.fr",
     "color": "#E40520",
     "description": { "fr": "Sponsor titre — partenaire fondateur du festival", "en": "Title sponsor — founding partner of the festival" }
