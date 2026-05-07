@@ -11,7 +11,7 @@ export async function generateStaticParams() {
   return [{ locale: "fr" }, { locale: "en" }];
 }
 
-export async function generateMetadata({ params }: { params: { locale: string } }): Promise<Metadata> {
+export async function generateMetadata(_: { params: { locale: string } }): Promise<Metadata> {
   return {
     alternates: {
       canonical: "/",

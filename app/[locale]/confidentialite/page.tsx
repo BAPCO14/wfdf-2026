@@ -1,4 +1,4 @@
-import { ORGANIZER, SITE } from "@/lib/constants";
+import { ORGANIZER } from "@/lib/constants";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = { title: "Politique de confidentialité" };

@@ -10,7 +10,7 @@ interface InscriptionFormProps {
   tournamentName: string;
 }
 
-export default function InscriptionForm({ locale, tournamentId, tournamentName }: InscriptionFormProps) {
+export default function InscriptionForm({ locale, tournamentId }: InscriptionFormProps) {
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
   const { register, handleSubmit, formState: { errors } } = useForm<InscriptionInput>({
     resolver: zodResolver(inscriptionSchema),

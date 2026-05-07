@@ -1,5 +1,5 @@
 import RevealSection from "@/components/home/RevealSection";
-import { EVENT, SITE } from "@/lib/constants";
+import { EVENT } from "@/lib/constants";
 import faqData from "@/content/faq.json";
 import type { Metadata } from "next";
 
