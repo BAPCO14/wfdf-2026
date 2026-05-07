@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#1a0035"/>
+      <stop offset="100%" stop-color="#0a0a14"/>
+    </radialGradient>
+    <radialGradient id="spotlight1" cx="30%" cy="20%" r="40%">
+      <stop offset="0%" stop-color="#660066" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#660066" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="spotlight2" cx="70%" cy="30%" r="35%">
+      <stop offset="0%" stop-color="#E40520" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#E40520" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <!-- Dark background -->
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <rect width="800" height="500" fill="url(#spotlight1)"/>
+  <rect width="800" height="500" fill="url(#spotlight2)"/>
+  <!-- Floor -->
+  <rect x="0" y="380" width="800" height="120" fill="#111" opacity="0.8"/>
+  <!-- Booth/stands silhouettes -->
+  <rect x="50" y="260" width="120" height="120" fill="#1a0535" rx="3"/>
+  <rect x="60" y="250" width="100" height="20" fill="#660066" rx="2"/>
+  <rect x="200" y="280" width="100" height="100" fill="#1a0535" rx="3"/>
+  <rect x="210" y="270" width="80" height="18" fill="#E40520" rx="2"/>
+  <rect x="350" y="240" width="150" height="140" fill="#1a0535" rx="3"/>
+  <rect x="360" y="228" width="130" height="22" fill="#660066" rx="2"/>
+  <rect x="550" y="270" width="110" height="110" fill="#1a0535" rx="3"/>
+  <rect x="558" y="260" width="94" height="18" fill="#E40520" rx="2"/>
+  <rect x="690" y="290" width="90" height="90" fill="#1a0535" rx="3"/>
+  <!-- Dart boards on walls -->
+  <circle cx="110" cy="190" r="35" fill="none" stroke="#660066" stroke-width="2" opacity="0.5"/>
+  <circle cx="110" cy="190" r="20" fill="none" stroke="#660066" stroke-width="1.5" opacity="0.4"/>
+  <circle cx="110" cy="190" r="8" fill="#E40520" opacity="0.6"/>
+  <circle cx="420" cy="160" r="42" fill="none" stroke="#660066" stroke-width="2" opacity="0.5"/>
+  <circle cx="420" cy="160" r="28" fill="none" stroke="#660066" stroke-width="1.5" opacity="0.4"/>
+  <circle cx="420" cy="160" r="12" fill="#E40520" opacity="0.6"/>
+  <!-- Spotlights from ceiling -->
+  <line x1="200" y1="0" x2="110" y2="190" stroke="white" stroke-width="20" opacity="0.03"/>
+  <line x1="400" y1="0" x2="420" y2="180" stroke="white" stroke-width="30" opacity="0.04"/>
+  <line x1="600" y1="0" x2="600" y2="300" stroke="white" stroke-width="15" opacity="0.03"/>
+  <!-- People silhouettes -->
+  <ellipse cx="130" cy="375" rx="8" ry="20" fill="#333" opacity="0.7"/>
+  <circle cx="130" cy="350" r="8" fill="#333" opacity="0.7"/>
+  <ellipse cx="290" cy="375" rx="8" ry="20" fill="#333" opacity="0.7"/>
+  <circle cx="290" cy="350" r="8" fill="#333" opacity="0.7"/>
+  <ellipse cx="470" cy="375" rx="8" ry="22" fill="#333" opacity="0.7"/>
+  <circle cx="470" cy="348" r="9" fill="#333" opacity="0.7"/>
+  <ellipse cx="650" cy="375" rx="7" ry="19" fill="#333" opacity="0.7"/>
+  <circle cx="650" cy="351" r="7" fill="#333" opacity="0.7"/>
+  <!-- Banner text -->
+  <rect x="200" y="30" width="400" height="60" fill="#660066" opacity="0.9" rx="3"/>
+  <text x="400" y="68" font-family="Arial Black, sans-serif" font-weight="900" font-size="22" fill="white" text-anchor="middle" letter-spacing="3">WINAMAX FRENCH DARTS FESTIVAL</text>
+</svg>

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" width="400" height="500">
+  <defs>
+    <radialGradient id="bg3" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#001a40"/>
+      <stop offset="100%" stop-color="#0d1020"/>
+    </radialGradient>
+    <radialGradient id="glow3" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#003399" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#003399" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="400" height="500" fill="url(#bg3)"/>
+  <ellipse cx="200" cy="200" rx="180" ry="200" fill="url(#glow3)"/>
+  <circle cx="200" cy="180" r="160" fill="none" stroke="#003399" stroke-width="1" opacity="0.25"/>
+  <circle cx="200" cy="180" r="120" fill="none" stroke="#003399" stroke-width="1" opacity="0.18"/>
+  <circle cx="200" cy="180" r="80" fill="none" stroke="#cc0000" stroke-width="1" opacity="0.2"/>
+  <!-- Body -->
+  <ellipse cx="200" cy="225" rx="68" ry="82" fill="#001133"/>
+  <!-- Head -->
+  <circle cx="200" cy="128" r="56" fill="#001a40"/>
+  <!-- Jersey - blue welsh style -->
+  <rect x="142" y="210" width="116" height="78" rx="5" fill="#002266"/>
+  <rect x="162" y="215" width="76" height="9" rx="2" fill="#cc0000" opacity="0.9"/>
+  <!-- Welsh dragon hint -->
+  <text x="200" y="262" font-size="20" text-anchor="middle" opacity="0.7">🐉</text>
+  <!-- Ranking badge -->
+  <circle cx="200" cy="175" r="22" fill="#003399" opacity="0.9"/>
+  <text x="200" y="181" font-family="Arial Black, sans-serif" font-weight="900" font-size="16" fill="white" text-anchor="middle">#6</text>
+  <!-- Flag -->
+  <text x="30" y="55" font-size="36">🏴󠁧󠁢󠁷󠁬󠁳󠁿</text>
+  <!-- Name -->
+  <rect x="0" y="420" width="400" height="80" fill="#0d1020" opacity="0.95"/>
+  <text x="200" y="453" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="28" fill="white" text-anchor="middle" letter-spacing="2">PRICE</text>
+  <text x="200" y="475" font-family="Arial, sans-serif" font-size="11" fill="#6699ff" text-anchor="middle" letter-spacing="4">THE ICEMAN</text>
+</svg>

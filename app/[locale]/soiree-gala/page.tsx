@@ -24,7 +24,7 @@ export default function GalaPage({ params: { locale } }: { params: { locale: str
       <section className="relative min-h-[60vh] flex items-center bg-gray-900 overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center opacity-30"
-          style={{ backgroundImage: "url('/assets/ambiance/gala.webp')", backgroundColor: "#1a1a2e" }}
+          style={{ backgroundImage: "url('/assets/ambiance/gala.svg')", backgroundColor: "#1a1a2e" }}
         />
         <div className="absolute inset-0 bg-gradient-to-r from-gray-900 via-gray-900/80 to-transparent" />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-white">

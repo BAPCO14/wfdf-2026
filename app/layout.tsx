@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     locale: "fr_FR",
     alternateLocale: "en_GB",
     siteName: "Winamax French Darts Festival",
-    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "WFDF 2026" }],
+    images: [{ url: "/og-image.svg", width: 1200, height: 630, alt: "WFDF 2026" }],
   },
   twitter: { card: "summary_large_image", creator: "@FrenchDartsFest" },
 };

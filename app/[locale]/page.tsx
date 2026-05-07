@@ -134,7 +134,7 @@ export default function HomePage({ params: { locale } }: { params: { locale: str
               <div className="relative bg-gray-900 h-80 overflow-hidden">
                 <div
                   className="absolute inset-0 bg-cover bg-center"
-                  style={{ backgroundImage: "url('/assets/ambiance/village.webp')", backgroundColor: "#1a1a2e" }}
+                  style={{ backgroundImage: "url('/assets/ambiance/village.svg')", backgroundColor: "#1a1a2e" }}
                 />
                 <div className="absolute inset-0 bg-[#660066]/20" />
                 <div className="absolute bottom-4 left-4 right-4 text-white">
@@ -213,83 +213,53 @@ export default function HomePage({ params: { locale } }: { params: { locale: str
             </h2>
           </RevealSection>
 
-          {/* Institutionnels */}
-          <RevealSection className="mb-14">
-            <div className="font-[Oswald] uppercase text-xs tracking-[0.4em] text-gray-400 mb-6 flex items-center gap-3">
-              <span className="flex-1 h-px bg-gray-100" />
-              {l === "fr" ? "Partenaires Institutionnels" : "Institutional Partners"}
-              <span className="flex-1 h-px bg-gray-100" />
-            </div>
-            <div className="flex flex-wrap items-center justify-center gap-6 md:gap-10">
-              {partnersData.filter((p) => p.tier === "institutional").map((p, i) => (
-                <RevealSection key={p.id} delay={i * 80}>
-                  <a href={p.url} target="_blank" rel="noopener noreferrer"
-                    className="group flex flex-col items-center gap-2 p-5 border border-gray-100 hover:border-gray-300 transition-colors w-40"
-                  >
-                    <div
-                      className="w-12 h-12 rounded flex items-center justify-center font-[Oswald] text-lg font-bold text-white"
-                      style={{ background: p.color }}
+          {[
+            { tier: "institutional", label: { fr: "Partenaires Institutionnels", en: "Institutional Partners" }, hover: "hover:border-gray-300" },
+            { tier: "equipment", label: { fr: "Équipementiers Officiels", en: "Official Equipment Suppliers" }, hover: "hover:border-[#660066]" },
+            { tier: "media", label: { fr: "Partenaires Médias", en: "Media Partners" }, hover: "hover:border-gray-300" },
+          ].map(({ tier, label, hover }, ti) => (
+            <RevealSection key={tier} className={ti < 2 ? "mb-14" : ""}>
+              <div className="font-[Oswald] uppercase text-xs tracking-[0.4em] text-gray-400 mb-6 flex items-center gap-3">
+                <span className="flex-1 h-px bg-gray-100" />
+                {label[l]}
+                <span className="flex-1 h-px bg-gray-100" />
+              </div>
+              <div className="flex flex-wrap items-center justify-center gap-6 md:gap-10">
+                {partnersData.filter((p) => p.tier === tier).map((p, i) => (
+                  <RevealSection key={p.id} delay={i * 80}>
+                    <a
+                      href={p.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={`group flex flex-col items-center gap-3 p-4 border border-gray-100 ${hover} transition-all duration-200 w-44 hover:shadow-md`}
                     >
-                      {p.name.slice(0, 2).toUpperCase()}
-                    </div>
-                    <span className="font-[Oswald] text-xs uppercase tracking-wide text-center text-gray-600 group-hover:text-gray-900 transition-colors">{p.name}</span>
-                  </a>
-                </RevealSection>
-              ))}
-            </div>
-          </RevealSection>
-
-          {/* Équipementiers */}
-          <RevealSection className="mb-14">
-            <div className="font-[Oswald] uppercase text-xs tracking-[0.4em] text-gray-400 mb-6 flex items-center gap-3">
-              <span className="flex-1 h-px bg-gray-100" />
-              {l === "fr" ? "Équipementiers Officiels" : "Official Equipment Suppliers"}
-              <span className="flex-1 h-px bg-gray-100" />
-            </div>
-            <div className="flex flex-wrap items-center justify-center gap-6 md:gap-10">
-              {partnersData.filter((p) => p.tier === "equipment").map((p, i) => (
-                <RevealSection key={p.id} delay={i * 80}>
-                  <a href={p.url} target="_blank" rel="noopener noreferrer"
-                    className="group flex flex-col items-center gap-2 p-5 border border-gray-100 hover:border-[#660066] transition-colors w-40"
-                  >
-                    <div
-                      className="w-12 h-12 rounded flex items-center justify-center font-[Oswald] text-lg font-bold text-white"
-                      style={{ background: p.color }}
-                    >
-                      {p.name.slice(0, 2).toUpperCase()}
-                    </div>
-                    <span className="font-[Oswald] text-xs uppercase tracking-wide text-center text-gray-600 group-hover:text-[#660066] transition-colors">{p.name}</span>
-                  </a>
-                </RevealSection>
-              ))}
-            </div>
-          </RevealSection>
-
-          {/* Médias */}
-          <RevealSection>
-            <div className="font-[Oswald] uppercase text-xs tracking-[0.4em] text-gray-400 mb-6 flex items-center gap-3">
-              <span className="flex-1 h-px bg-gray-100" />
-              {l === "fr" ? "Partenaires Médias" : "Media Partners"}
-              <span className="flex-1 h-px bg-gray-100" />
-            </div>
-            <div className="flex flex-wrap items-center justify-center gap-6 md:gap-10">
-              {partnersData.filter((p) => p.tier === "media").map((p, i) => (
-                <RevealSection key={p.id} delay={i * 80}>
-                  <a href={p.url} target="_blank" rel="noopener noreferrer"
-                    className="group flex flex-col items-center gap-2 p-5 border border-gray-100 hover:border-gray-300 transition-colors w-40"
-                  >
-                    <div
-                      className="w-12 h-12 rounded flex items-center justify-center font-[Oswald] text-lg font-bold text-white"
-                      style={{ background: p.color }}
-                    >
-                      {p.name.slice(0, 2).toUpperCase()}
-                    </div>
-                    <span className="font-[Oswald] text-xs uppercase tracking-wide text-center text-gray-600 group-hover:text-gray-900 transition-colors">{p.name}</span>
-                  </a>
-                </RevealSection>
-              ))}
-            </div>
-          </RevealSection>
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img
+                        src={p.logo}
+                        alt={p.name}
+                        width={160}
+                        height={64}
+                        className="w-full h-14 object-contain group-hover:scale-105 transition-transform duration-200"
+                        onError={(e) => {
+                          const el = e.currentTarget as HTMLImageElement;
+                          el.style.display = "none";
+                          const fallback = el.nextElementSibling as HTMLElement | null;
+                          if (fallback) fallback.style.display = "flex";
+                        }}
+                      />
+                      <div
+                        className="hidden w-full h-14 rounded items-center justify-center font-[Oswald] text-lg font-bold text-white"
+                        style={{ background: p.color }}
+                      >
+                        {p.name.slice(0, 2).toUpperCase()}
+                      </div>
+                      <span className="font-[Oswald] text-xs uppercase tracking-wide text-center text-gray-500 group-hover:text-gray-900 transition-colors">{p.name}</span>
+                    </a>
+                  </RevealSection>
+                ))}
+              </div>
+            </RevealSection>
+          ))}
         </div>
       </section>
 

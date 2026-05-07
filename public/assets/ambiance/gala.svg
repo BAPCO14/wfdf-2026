@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#1a0035"/>
+      <stop offset="100%" stop-color="#0a0510"/>
+    </radialGradient>
+    <radialGradient id="gold" cx="50%" cy="0%" r="60%">
+      <stop offset="0%" stop-color="#FFD700" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#FFD700" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="purple" cx="80%" cy="60%" r="40%">
+      <stop offset="0%" stop-color="#660066" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#660066" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <rect width="800" height="500" fill="url(#gold)"/>
+  <rect width="800" height="500" fill="url(#purple)"/>
+  <!-- Stage -->
+  <rect x="150" y="280" width="500" height="30" fill="#1a0535" rx="2"/>
+  <rect x="100" y="310" width="600" height="180" fill="#0d0020"/>
+  <!-- Curtains -->
+  <rect x="100" y="0" width="80" height="320" fill="#4a0066" opacity="0.8"/>
+  <rect x="620" y="0" width="80" height="320" fill="#4a0066" opacity="0.8"/>
+  <!-- Stage lights from ceiling -->
+  <g opacity="0.15">
+    <polygon points="200,0 170,280 230,280" fill="#FFD700"/>
+    <polygon points="350,0 310,280 390,280" fill="#ffffff"/>
+    <polygon points="450,0 410,280 490,280" fill="#cc00cc"/>
+    <polygon points="600,0 570,280 630,280" fill="#FFD700"/>
+  </g>
+  <!-- Spotlight circles on stage -->
+  <ellipse cx="250" cy="290" rx="50" ry="15" fill="#FFD700" opacity="0.15"/>
+  <ellipse cx="400" cy="290" rx="60" ry="18" fill="white" opacity="0.1"/>
+  <ellipse cx="550" cy="290" rx="50" ry="15" fill="#cc00cc" opacity="0.15"/>
+  <!-- Stars/sparkles -->
+  <text x="200" y="150" font-size="20" opacity="0.6">✨</text>
+  <text x="400" y="80" font-size="24" opacity="0.7">⭐</text>
+  <text x="580" y="180" font-size="18" opacity="0.5">✨</text>
+  <text x="300" y="230" font-size="16" opacity="0.4">⭐</text>
+  <!-- Tables/chairs silhouettes -->
+  <ellipse cx="200" cy="430" rx="40" ry="20" fill="#1a0035" opacity="0.9"/>
+  <ellipse cx="400" cy="420" rx="50" ry="22" fill="#1a0035" opacity="0.9"/>
+  <ellipse cx="600" cy="430" rx="40" ry="20" fill="#1a0035" opacity="0.9"/>
+  <!-- Candles on tables -->
+  <rect x="197" y="408" width="6" height="18" fill="#FFD700" opacity="0.8" rx="1"/>
+  <ellipse cx="200" cy="406" rx="5" ry="3" fill="orange" opacity="0.7"/>
+  <rect x="397" y="398" width="6" height="18" fill="#FFD700" opacity="0.8" rx="1"/>
+  <ellipse cx="400" cy="396" rx="5" ry="3" fill="orange" opacity="0.7"/>
+  <rect x="597" y="408" width="6" height="18" fill="#FFD700" opacity="0.8" rx="1"/>
+  <ellipse cx="600" cy="406" rx="5" ry="3" fill="orange" opacity="0.7"/>
+  <!-- Banner -->
+  <rect x="180" y="30" width="440" height="55" fill="#660066" opacity="0.9" rx="3"/>
+  <text x="400" y="63" font-family="Arial Black, sans-serif" font-weight="900" font-size="20" fill="white" text-anchor="middle" letter-spacing="2">SOIRÉE DE GALA · 5 DÉC. 2026</text>
+</svg>

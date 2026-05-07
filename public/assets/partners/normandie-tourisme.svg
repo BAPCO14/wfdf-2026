@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 80" width="200" height="80">
+  <rect width="200" height="80" fill="#2E7D32" rx="4"/>
+  <text x="100" y="28" font-family="Arial, sans-serif" font-weight="700" font-size="10" fill="white" text-anchor="middle" letter-spacing="2">NORMANDIE</text>
+  <text x="100" y="50" font-family="Arial Black, sans-serif" font-weight="900" font-size="16" fill="#A5D6A7" text-anchor="middle" letter-spacing="1">TOURISME</text>
+  <text x="100" y="66" font-size="14" text-anchor="middle">🌊</text>
+</svg>

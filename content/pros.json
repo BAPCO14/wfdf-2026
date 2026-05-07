@@ -13,7 +13,7 @@
       "en": "English prodigy, PDC World Champion 2024 at just 17 years old. Luke Littler is the new world superstar of darts."
     },
     "achievements": ["Champion du Monde PDC 2024", "Premier League Darts 2024", "Players Championship Finals 2023"],
-    "photo": "/assets/players/luke-littler.webp",
+    "photo": "/assets/players/luke-littler.svg",
     "instagram": "lukelittler180",
     "tournament": "Winamax Open"
   },
@@ -31,7 +31,7 @@
       "en": "The living legend of darts. Three-time world champion, Michael van Gerwen remains one of the most feared players."
     },
     "achievements": ["Champion du Monde PDC 2014, 2017, 2019", "16 fois major PDC", "Record 180s en un match"],
-    "photo": "/assets/players/michael-van-gerwen.webp",
+    "photo": "/assets/players/michael-van-gerwen.svg",
     "instagram": "michaelvangerwendarts",
     "tournament": "Grand Prix de Normandie"
   },
@@ -49,7 +49,7 @@
       "en": "Former rugby player turned darts champion. Gerwyn Price is known for his nerves of steel and deadly accuracy."
     },
     "achievements": ["Champion du Monde PDC 2021", "Premier League Darts 2022", "World Grand Prix 2020"],
-    "photo": "/assets/players/gerwyn-price.webp",
+    "photo": "/assets/players/gerwyn-price.svg",
     "instagram": "gerwynpricedarts",
     "tournament": "Coupe de Caen"
   }

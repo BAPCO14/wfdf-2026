@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <radialGradient id="bgog" cx="60%" cy="40%" r="70%">
+      <stop offset="0%" stop-color="#2d003a"/>
+      <stop offset="50%" stop-color="#0d0d1a"/>
+      <stop offset="100%" stop-color="#1a0005"/>
+    </radialGradient>
+    <radialGradient id="glow1" cx="70%" cy="30%" r="50%">
+      <stop offset="0%" stop-color="#660066" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#660066" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="20%" cy="70%" r="40%">
+      <stop offset="0%" stop-color="#E40520" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#E40520" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgog)"/>
+  <rect width="1200" height="630" fill="url(#glow1)"/>
+  <rect width="1200" height="630" fill="url(#glow2)"/>
+  <!-- Dart board decoration -->
+  <circle cx="950" cy="315" r="280" fill="none" stroke="#660066" stroke-width="2" opacity="0.2"/>
+  <circle cx="950" cy="315" r="210" fill="none" stroke="#660066" stroke-width="1.5" opacity="0.15"/>
+  <circle cx="950" cy="315" r="140" fill="none" stroke="#660066" stroke-width="1" opacity="0.12"/>
+  <circle cx="950" cy="315" r="70" fill="none" stroke="#E40520" stroke-width="1.5" opacity="0.2"/>
+  <circle cx="950" cy="315" r="25" fill="#E40520" opacity="0.3"/>
+  <!-- Radial lines -->
+  <g stroke="#660066" stroke-width="1" opacity="0.1">
+    <line x1="950" y1="35" x2="950" y2="595"/>
+    <line x1="670" y1="315" x2="1230" y2="315"/>
+    <line x1="752" y1="117" x2="1148" y2="513"/>
+    <line x1="1148" y1="117" x2="752" y2="513"/>
+  </g>
+  <!-- Winamax badge -->
+  <rect x="60" y="60" width="200" height="54" rx="3" fill="#E40520"/>
+  <text x="160" y="94" font-family="Arial Black, sans-serif" font-weight="900" font-size="22" fill="white" text-anchor="middle" letter-spacing="3">WINAMAX</text>
+  <!-- Main title -->
+  <text x="60" y="230" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="72" fill="white" letter-spacing="3">FRENCH</text>
+  <text x="60" y="320" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="72" fill="white" letter-spacing="3">DARTS</text>
+  <text x="60" y="410" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="72" fill="#cc00cc" letter-spacing="3">FESTIVAL</text>
+  <!-- Year + location -->
+  <text x="60" y="480" font-family="Arial, sans-serif" font-weight="700" font-size="28" fill="white" opacity="0.7" letter-spacing="6">2026 · CAEN</text>
+  <!-- Date -->
+  <rect x="60" y="510" width="380" height="50" fill="#660066" rx="3"/>
+  <text x="250" y="543" font-family="Arial, sans-serif" font-weight="700" font-size="18" fill="white" text-anchor="middle" letter-spacing="2">4, 5 &amp; 6 DÉCEMBRE 2026</text>
+  <!-- Stats -->
+  <text x="60" y="610" font-family="Arial, sans-serif" font-size="16" fill="white" opacity="0.5" letter-spacing="3">8 TOURNOIS · 3 PROS · 34 000€ DE PRIZE MONEY</text>
+</svg>

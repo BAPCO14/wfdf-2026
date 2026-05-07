@@ -3,7 +3,7 @@
     "id": "winamax",
     "name": "Winamax",
     "tier": "title",
-    "logo": "/assets/partners/winamax.png",
+    "logo": "/assets/partners/winamax.svg",
     "url": "https://www.winamax.fr",
     "color": "#E40520",
     "description": { "fr": "Sponsor titre — partenaire fondateur du festival", "en": "Title sponsor — founding partner of the festival" }
@@ -12,7 +12,7 @@
     "id": "ville-caen",
     "name": "Ville de Caen",
     "tier": "institutional",
-    "logo": "/assets/partners/ville-caen.png",
+    "logo": "/assets/partners/ville-caen.svg",
     "url": "https://www.caen.fr",
     "color": "#003399",
     "description": { "fr": "Partenaire institutionnel", "en": "Institutional partner" }
@@ -21,7 +21,7 @@
     "id": "normandie-tourisme",
     "name": "Normandie Tourisme",
     "tier": "institutional",
-    "logo": "/assets/partners/normandie-tourisme.png",
+    "logo": "/assets/partners/normandie-tourisme.svg",
     "url": "https://www.normandie-tourisme.fr",
     "color": "#00843D",
     "description": { "fr": "Partenaire institutionnel", "en": "Institutional partner" }
@@ -30,7 +30,7 @@
     "id": "btv",
     "name": "BTV Bretagne",
     "tier": "media",
-    "logo": "/assets/partners/btv.png",
+    "logo": "/assets/partners/btv.svg",
     "url": "#",
     "color": "#FF6600",
     "description": { "fr": "Partenaire média officiel", "en": "Official media partner" }
@@ -39,7 +39,7 @@
     "id": "target-darts",
     "name": "Target Darts",
     "tier": "equipment",
-    "logo": "/assets/partners/target-darts.png",
+    "logo": "/assets/partners/target-darts.svg",
     "url": "https://www.target-darts.co.uk",
     "color": "#CC0000",
     "description": { "fr": "Équipementier officiel", "en": "Official equipment supplier" }
@@ -48,7 +48,7 @@
     "id": "red-dragon",
     "name": "Red Dragon Darts",
     "tier": "equipment",
-    "logo": "/assets/partners/red-dragon.png",
+    "logo": "/assets/partners/red-dragon.svg",
     "url": "https://www.reddragon.co.uk",
     "color": "#C41230",
     "description": { "fr": "Équipementier officiel", "en": "Official equipment supplier" }
@@ -57,7 +57,7 @@
     "id": "unicorn",
     "name": "Unicorn Darts",
     "tier": "equipment",
-    "logo": "/assets/partners/unicorn.png",
+    "logo": "/assets/partners/unicorn.svg",
     "url": "https://www.unicorn-darts.com",
     "color": "#1A1A2E",
     "description": { "fr": "Équipementier officiel", "en": "Official equipment supplier" }
@@ -66,7 +66,7 @@
     "id": "calvados-departement",
     "name": "Département du Calvados",
     "tier": "institutional",
-    "logo": "/assets/partners/calvados.png",
+    "logo": "/assets/partners/calvados.svg",
     "url": "https://www.calvados.fr",
     "color": "#005B8E",
     "description": { "fr": "Partenaire institutionnel", "en": "Institutional partner" }
