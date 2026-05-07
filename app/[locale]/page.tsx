@@ -1,6 +1,7 @@
 import HeroSection from "@/components/home/HeroSection";
 import RevealSection from "@/components/home/RevealSection";
 import ProCard from "@/components/home/ProCard";
+import PartnerLogo from "@/components/home/PartnerLogo";
 import NewsletterForm from "@/components/home/NewsletterForm";
 import Link from "next/link";
 import { formatCurrency } from "@/lib/utils";
@@ -233,26 +234,7 @@ export default function HomePage({ params: { locale } }: { params: { locale: str
                       rel="noopener noreferrer"
                       className={`group flex flex-col items-center gap-3 p-4 border border-gray-100 ${hover} transition-all duration-200 w-44 hover:shadow-md`}
                     >
-                      {/* eslint-disable-next-line @next/next/no-img-element */}
-                      <img
-                        src={p.logo}
-                        alt={p.name}
-                        width={160}
-                        height={64}
-                        className="w-full h-14 object-contain group-hover:scale-105 transition-transform duration-200"
-                        onError={(e) => {
-                          const el = e.currentTarget as HTMLImageElement;
-                          el.style.display = "none";
-                          const fallback = el.nextElementSibling as HTMLElement | null;
-                          if (fallback) fallback.style.display = "flex";
-                        }}
-                      />
-                      <div
-                        className="hidden w-full h-14 rounded items-center justify-center font-[Oswald] text-lg font-bold text-white"
-                        style={{ background: p.color }}
-                      >
-                        {p.name.slice(0, 2).toUpperCase()}
-                      </div>
+                      <PartnerLogo src={p.logo} alt={p.name} color={p.color} />
                       <span className="font-[Oswald] text-xs uppercase tracking-wide text-center text-gray-500 group-hover:text-gray-900 transition-colors">{p.name}</span>
                     </a>
                   </RevealSection>
